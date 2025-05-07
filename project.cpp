@@ -3,7 +3,7 @@
 #include <sstream>
 #include <cstring>
 #include <iomanip>
-#include <unistd.h>
+#include <windows.h>
 #include <vector>
 #include <conio.h>
 
@@ -127,7 +127,7 @@ public:
     {
       cout << "Sorry, you have exceeded the maximum number of trials.\n"
            << setw(40) << "Please try again in 30 seconds.\n";
-      sleep(30);
+      Sleep(30);
       login_cust();
     }
     system("cls");
@@ -248,7 +248,7 @@ public:
       {
         cout << "*Sorry, you have exceeded the maximum number of trials.*\n"
              << setw(40) << "Please try again in 30 seconds." << endl;
-        sleep(30);
+        Sleep(30);
       }
       system("cls");
     }
